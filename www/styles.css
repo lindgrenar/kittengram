@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+i, img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0 0 6px 0 #161f27;
+}
+
+nav {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  background-color: #202b38;
+  z-index: 2;
+}
+
+.logo {
+  width: 3rem;
+  border-radius: 5px;
+}
+
+.logo-text {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.add-button, .close-button {
+  position: absolute;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-button {
+  display: none;
+}
+
+.add-post-form {
+  position: fixed;
+  padding: 15px;
+  background-color: #202b38;
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  width: 100%;
+  max-width: 600px;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: 300ms;
+}
+
+.add-post-form > input, .add-post-form > textarea {
+  width: 100%;
+}
+
+.add-post-form > img {
+  width: 30%;
+  border-radius: 6px;
+}
+
+img {
+  width: 100%;
+}
+
+.kitten-posts {
+  padding-top: 4rem;
+}
+
+.card {
+  padding: 10px 0;
+}
+
+.title-bar {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  align-items: center;
+}
+
+.title-bar > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.title-bar > h2 {
+  margin: 0;
+  text-transform: lowercase;
+  word-spacing: -6px;
+}
+
+.icon-bar > i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icon-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.card > .content {
+  padding: 5px 15px;
+}
+
+.published {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.6;
+  font-weight: normal;
+  font-size: 0.8rem;
+}

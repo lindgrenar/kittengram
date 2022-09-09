@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kittengram</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <!-- https://boxicons.com/ -->
+</head>
+<body>
+  <nav>
+    <img class="logo" src="/assets/logo.jpg" alt="kittengram logo">
+    <img class="logo-text" src="/assets/kittengram-white.png" alt="kittengram logo">
+    <i class="close-button bx bx-message-square-minus"></i>
+    <i class="add-button bx bx-message-square-add"></i>
+  </nav>
+
+  <form class="add-post-form">
+    <img src="/assets/no-image.svg">
+    <input required type="file" accept="image/*" placeholder="image of kitten">
+    <input required type="text" placeholder="title">
+    <textarea required placeholder="description" rows="2"></textarea>
+    <div>
+      <button type="reset">Cancel</button>
+      <button type="submit">Post</button>
+    </div>
+  </form>
+
+  <div class="kitten-posts"></div>
+
+  <script src="/js/main.js" type="module"></script>
+</body>
+</html>
